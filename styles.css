@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Futura;
+    src: url('FuturaPT-Demi.ttf');
+}
+
+* {
+   background-color: #72A153;
+   background-image: url('./assets/PROGRAMS_BACKGROUND.svg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   color: white;
+   font-family: Futura;
+   box-sizing:border-box
+}
+
+ .title {
+   text-align: center;
+    font-size: 30px;
+    /* word-spacing: -2px; */
+    word-break: break-all;
+ }
+
+ p {
+   text-align: justify;
+   font-size: large;
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 0px;
+ }
+
+ .center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .center img {
+  width: 400px;
+ }
+
+ button {
+   height: 80px;
+   width: 25%;
+   margin-top: 20px;
+   background-color: white;
+   border-radius: 10px;
+   margin-bottom: 100px;
+   font-size: 50px;
+   border-color: black;
+   border: 5px;
+ }
+
+ img {
+   width: 40%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+ }
+
+ .socials ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+ }
+
+ /* .tile a {
+  display: block;
+  padding: 10px;
+  margin-right: 5px;
+  
+ } */
+
+ .tile img {
+  margin: 20px;
+  width: 100px;
+  justify-content: center;
+ }
+
+
+  /* Carousel */
+/* Slideshow container */
+.slideshow-container {
+   max-width: 1000px;
+   max-height: 1000px;
+   position: relative;
+   /* margin: auto; */
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 20px;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+   border-radius: 20px ;
+ }
+ 
+ 
+
+ /* Fading animation */
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ .bottom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+  /* Carousel */
+
+ @media screen and (max-width: 600px) {
+   .title {
+     font-size: 25px;
+     margin-top: 80px;
+  }
+
+  .center {
+   font-size: 20px;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .tile img {
+    width: 40px;
+    margin: 10px;
+    margin-top: 30px;
+  }
+}
